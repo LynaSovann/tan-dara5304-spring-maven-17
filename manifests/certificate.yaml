@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: tan-dara5304-spring-maven-17-certificate
+  namespace: tan-dara5304-spring-maven-17
+spec:
+  secretName: tan-dara5304-spring-maven-17-secret-tls
+  commonName: dara.darasr.online
+  dnsNames:
+  - dara.darasr.online
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
